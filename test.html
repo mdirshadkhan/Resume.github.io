@@ -1,94 +1,248 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+<html>
+<head>
 
-	<link rel="stylesheet" href="app.css">
-    <!-- Bootstrap -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<meta charset=UTF-8">
+<meta charset="utf-8">
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<title>Online Resume of Mohammed Khan</title>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-	  <div class="panel panel-default">
-		  <div class="panel-heading">
-			  <h3 class="panel-title"><b>Videos</b></h3>
-		  </div>
-		  <div class="panel-body">
-			  <ul class="list-unstyled video-list-thumbs row" id="videos-row"></ul>
-		  </div>
-	  </div>
+<!--meta-->
+<meta name="description" content="Mohammed Khan professional Resume Webpage">
+<meta name="keywords" content="web,developer,designer,resume" />
+<meta name="author" content="Mohammed Khan">
 
-	  <div class="panel panel-default">
-		 <div class="panel-heading">
-			 <h3 class="panel-title"><b>Images</b></h3>
-		 </div>
-		 <div class="panel-body">
-			 <div class="row" id="images-row"></div>
-		 </div>
-	 </div>
+<!--CSS style sheet-->
+<link rel="stylesheet" type="text/css" href="C:\Users\khan.1111\Desktop\Mkhan.css"/>
 
-	 <div class="panel panel-default">
-		 <div class="panel-heading">
-			 <h3 class="panel-title"><b>Other</b></h3>
-		 </div>
-		 <div class="panel-body">
-			Display other files here..............
-		 </div>
-	 </div>
+</head>
+<body>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </body>
+<!-- begin wrapper-->
+<div id="wrapper">
 
-  <script>
-   $(document).ready(function(){
-	   //Images
-	   var imagesdir = "content/images";
-	   var fileextension = "jpg";
-	   $.ajax({
-	       url: imagesdir,
-	       success: function (data) {
-			   $(data).find("a:contains(" + fileextension + ")").each(function () {
-		            var filename = this.href.replace(window.location.host+"/", "").replace("http://", "");
-					//console.log(filename);
-					$("#images-row").append('<div class="col-xs-6 col-md-2"><a class="thumbnail"><img src="'+filename+'" alt="..."></a></div>');
-		        });
-	       }
-	   });
 
-	   //Videos
-	   var videosdir = "content/videos";
-	   var vfileextension1 = "mp4";
-	   var vfileextension2 = "ogv";
-	   var vfileextension3 = "webm";
-	   $.ajax({
-	       url: videosdir,
-	       success: function (data) {
-			   $(data).find("a:contains(" + vfileextension1 + "),a:contains(" + vfileextension2 + "),a:contains(" + vfileextension3 + ")").each(function () {
-		            var filename = this.href.replace(window.location.host+"/", "").replace("http://", "");
-					//console.log(filename);
-					$("#videos-row").append('<li class="col-lg-3 col-sm-4 col-xs-6"><a href=""><video controls class="img-responsive">'+
-						'<source src='+filename+' type="video/mp4"></a></li>');
-		        });
-	       }
-	   });
-   });
+<!-- Begin content area --->
+<div id="content"="250" height="250" alt="Mohammed Khan" />
 
-</script>
+
+<!-- Begin Header --->
+<header>
+
+<!--Begin Contact section--->
+<section id="contact-details">
+<div itemscope itemtype="http://schema.org/Person">
+
+
+<!--Begin Profile Image section --->
+<div class="header_1">
+<!--<img src="" itemprop="image" width="250" height="250" alt="Mohammed Khan"></img>-->
+</div>
+<!-- End of profile Image section -->
+
+
+<!-- Begin Profile info section -->
+<div class="header_2">
+
+<h1><span itemprop="address">Mohammed Khan</span></h1>
+<h3><span itemprop="job title">Web Developer/Designer/Automation Tester </span></h3>
+
+<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<ul class="info_1">
+	<li class="address"><span itemprop="streetAddress">7428 Markham Road,Markham,ON,L3S 4V6</span></li>
+</ul>
+<ul class="info_2">
+	<li class="phone"><span itemprop="PhoneNumber">(647)303-3786</span></li>
+	<li class="phone"><span itemprop="PhoneNumber">(289)859-9931</span></li>
+	<li class="email"><a href="mailto:mdirshadkhan@hotmail.com" itemprop="email">mdirshadkhan@hotmail.com</a>
+</ul>
+<!--End Profile Info Section----->
+</div>
+</div>
+</div>
+</section>
+
+<!-- End Contact Section ---->
+
+</header>
+
+<!---End Header---->
+
+<div class="clear">&nbsp;</div>
+
+<!---Begin Profile Section ---->
+<dl>
+<dt>Profile:</dt>
+<dd>
+	<section class="summary">
+		Proven experience in automation scripts/network/hardware/operating system troubleshooting, PC assembly, system integration, technical support,
+		and customer service helpdesk.Expert communicator with more than an year expereiance in the IT field and familiar with QTP,QC,VBscripting,HTML,CSS and Java.Has a good 
+		technical knowledge and troubleshooting the system and resolving most technical queries.
+		<p>Looking forward for an opportunity where my technical ability and experiance will be considered.</p>
+	</summary>
+</dd>
+</dl>
+<!--End Profile Section---->
+
+<div class="clear">&nbsp;</div>
+
+<!--Begin Skills Section---->
+<div itemscope itemtype="http://schema.org/ItemList">
+<dl>
+<dt itemprop="name">Skills:</dt>
+<dd>
+	
+	<section id="skills">
+		<ul class="list1">
+			<li itemprop="ItemListElement">HTML5</li>
+			<li itemprop="ItemListElement">XHTML</li>
+			<li itemprop="ItemListElement">VBScript</li>
+			<li itemprop="ItemListElement">JavaScript</li>
+			<li itemprop="ItemListElement">Amazon Web Services(AWS)</li>
+		</ul>
+		<ul class="list2">
+			
+			<li itemprop="ItemListElement">CSS</li>
+			<li itemprop="ItemListElement">MySQL</li>
+			<li itemprop="ItemListElement">Microsoft Office</li>
+			<li itemprop="ItemListElement">Photoshop</li>
+			
+		</ul>
+	</section>
+</dd>
+</dl>
+</div>
+
+<!-- End of Skills Section---->
+
+<div class="clear">&nbsp;</div>
+<div itemscope itemtype="http://schema.org/ItemList">
+<dl>
+<dt itemprop="name">Testing Tools:</dt>
+<dd>
+	
+	<section id="skills">
+		<ul class="list1">
+			<li itemprop="ItemListElement">Selenium</li>
+			<li itemprop="ItemListElement">AutoIT</li>
+			<li itemprop="ItemListElement">QTP</li>
+			<li itemprop="ItemListElement">Ranorex</li>
+		</ul>
+		
+	</section>
+</dd>
+</dl>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<div itemscope itemtype="http://schema.org/ItemList">
+<dl>
+<dt itemprop="name">Ticketting Tools:</dt>
+<dd>
+	
+	<section id="skills">
+		<ul class="list1">
+			<li itemprop="ItemListElement">Zendesk</li>
+			<li itemprop="ItemListElement">Amdocs</li>
+			<li itemprop="ItemListElement">Remedy</li>
+			
+		</ul>
+		
+	</section>
+</dd>
+</dl>
+</div>
+
+<div class="clear">&nbsp;</div>
+
+<!--Begin Experiance Section--->
+<dl>
+<dt>Experience:</dt>
+
+<dd>
+	<section id="experience">
+	
+		<!-- Position #1 -->
+		 
+		<h2 class="top">VeriFone Technical Representative II</h2>
+		<p class="bus1">TelePerformance</p>
+		<p class="time">November 2015 &#45; Present</p>
+
+		<p>As a Tier 2 techincal support responsible for configuring all the POS systems,installing the software,downloading through cloud and resolving techincal pinpad and POS issues when needed.</p>
+		<!-- Position #2 -->
+		 
+		<h2 class="top"> IT HelpDesk</h2>
+		<p class="bus1">Environment & Land Tribunal Ontario(ELTO)</p>
+		<p class="time">September 2014 &#45; January 2015</p>
+		<p>Resolved internal technical queries and troubleshooted all the systems whitin the office .Other responisibilities do include installing the software over the network for the desktops,performing
+		backup and maintaing the schedule so that the backup is picked up and kept at a safe environment.Also installed hardware such as printers,scanners.Did resolved queries which include troubleshooting 
+		and configuring microsoft outlook and other applications. </p>
+
+		<!-- Position #3 -->
+		 
+		<h2 class="top"> Automation Tester</h2>
+		<p class="bus1">Canadian Bank of Commerce(CIBC)</p>
+		<p class="time">September 2013 &#45; April 2014</p>
+		<p>Performed different test for the bank which includes creating test cases in QTP using VBscripting and JAVA,providing the result.Also created scripts which will automate the process of testing in QTP.Worked on QC and also wrote macros for excel
+		to perform test for the larger data.Automated the scripts to perform software testing for multiple channels such as online banking,ATM transactions.Worked on test cases to pull the reports which will give the test
+		results.Also worked on some automation projects within the organisation.</p>
+
+	</section>
+</dd>
+</dl>
+<!-- End Experiance Section----->	
+
+<div class="clear">&nbsp;</div>
+
+<!--Begin Education Section---->
+<dl>
+<dt>Education:</dt>
+<dd>
+	<section id="education">
+	
+		<p class="bus1">1.JNT University(Bachelors in Computer Science)<br/>
+		Hyderabad,INDIA</p>
+		
+	</section>
+</dd>
+</dl>
+
+<!--End Education Section ----->
+<div class="clear">&nbsp;</div>
+
+<!--Begin Footer------>
+<div class="footer">
+
+<!-- Begin Footer Content -->
+<div class="footer_content">
+
+<!--Begin Schema Section----->
+<!--<ul class="icon_1">
+	<a href="https://plus.google.com/+MohammedKhan0786/about" target="_blank" itemprop="url" title="Google Profile"><img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32" alt="Google Profile"></a>
+    &nbsp;
+	<a href="mohammed_khan.doc" title="download Resume Document"><img src="" width="48" height="48"/></a>
+</ul>
+<ul class="icon_2">
+	
+</ul>-->
+<hr/>
+<!--End Schema Section-->
+
+</div>
+<!--End Footer Content ---->
+
+<div class="credits">
+	&copy;&nbsp Mohammed Khan
+</div>	
+</footer>
+<!--End Footer---------->
+
+</div>
+<!--End Content--->
+
+</div>
+<!--End Wrapper---->
+
+</body>
 </html>

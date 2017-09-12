@@ -1,2 +1,2 @@
-# test.github.io
-Testing to get data from the folder 
+# mdirshadkhanresume.github.io
+Mohammed Khan Resume

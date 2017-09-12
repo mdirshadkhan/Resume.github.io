@@ -1,2 +1,2 @@
-# mdirshadkhanresume.github.io
+# Resume.github.io
 Mohammed Khan Resume
